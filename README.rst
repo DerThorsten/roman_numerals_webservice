@@ -20,7 +20,7 @@ roman_numerals_webservice
 
 
 
-A python package for a minimalist webservice to convert roman numerals to araic numerals and vice versa.
+A python package for a minimalistic web-service to convert roman numerals to arabic numerals and vice versa.
 
 
 * Free software: MIT license
@@ -32,10 +32,10 @@ Features
 
 * TODO
 
-Credits
--------
+.. Credits
+.. -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+.. This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
