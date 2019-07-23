@@ -13,10 +13,12 @@ roman_numerals_webservice
         :target: https://roman-numerals-webservice.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+.. image:: https://mybinder.org/badge_logo.svg
+        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks
 
 .. image:: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/shield.svg
-     :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
-     :alt: Updates
+        :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
+        :alt: Updates
 
 
 
