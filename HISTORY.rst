@@ -2,6 +2,13 @@
 History
 =======
 
+0.3.0 (2019-07-23)
+------------------
+
+* fixed missing subpackages
+* added examples
+
+
 0.2.0 (2019-07-23)
 ------------------
 
@@ -11,4 +18,4 @@ History
 0.1.0 (2019-07-23)
 ------------------
 
-* Initial version. 
+* Initial version 
