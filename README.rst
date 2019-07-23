@@ -27,7 +27,7 @@ A python package for a minimalistic web-service to convert roman numerals to ara
 
 * Free software: MIT license
 * Documentation: https://roman-numerals-webservice.readthedocs.io.
-
+* `Try package online`_
 
 Features
 --------
@@ -42,3 +42,4 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`Try package online`: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks
