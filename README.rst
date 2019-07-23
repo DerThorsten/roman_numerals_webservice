@@ -30,12 +30,13 @@ A python package for a minimalistic web-service to convert roman numerals to ara
 Features
 --------
 
-* TODO
+* minimalistic web-service to convert roman numerals to arabic numerals and vice versa
+* heavy tested
 
-.. Credits
-.. -------
+Credits
+-------
 
-.. This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
-.. .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
