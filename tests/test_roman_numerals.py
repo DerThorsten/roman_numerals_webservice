@@ -1,11 +1,11 @@
 import pytest
 
 import numpy
-from roman_numerals_webservice.roman_numerals import \
-    (arabic_to_roman, roman_to_arabic)
+from roman_numerals_webservice.roman_numerals import arabic_to_roman, roman_to_arabic
 
 # helper to check if a str is a valid roman numeral
-from  utils import  all_valid_roman_numerals_upper_case
+from utils import all_valid_roman_numerals_upper_case
+
 
 class TestArabicToRoman(object):
 
@@ -4013,16 +4013,16 @@ class TestArabicToRoman(object):
 
     # test invariant
     def test_invariant(self):
-        for i in range(1,3999):
+        for i in range(1, 3999):
             r = arabic_to_roman(i)
             j = roman_to_arabic(r)
             assert i == j
 
     # test if everything works properly with numpy dtypes
-    @pytest.mark.parametrize('dtype', ['uint8', 'uint16', 
-                                       'uint32', 'uint64', 
-                                       'int8', 'int16',
-                                       'int32', 'int64'])
+    @pytest.mark.parametrize(
+        "dtype",
+        ["uint8", "uint16", "uint32", "uint64", "int8", "int16", "int32", "int64"],
+    )
 
     # test that numpy arrays with integral
     # dtype work properly
@@ -4032,7 +4032,7 @@ class TestArabicToRoman(object):
         max_value = min(numpy.iinfo(dtype).max, 3999)
         values = numpy.arange(1, max_value + 1, dtype=dtype)
 
-        for i,i_np in zip(range(1, max_value + 1), values):
+        for i, i_np in zip(range(1, max_value + 1), values):
             r = arabic_to_roman(i_np)
             j = roman_to_arabic(r)
             assert i == j
@@ -4041,14 +4041,13 @@ class TestArabicToRoman(object):
     # therefore valid input
     def test_bool_input(self):
 
-        assert arabic_to_roman(True) == 'I'
+        assert arabic_to_roman(True) == "I"
         with pytest.raises(ValueError):
             assert arabic_to_roman(False)
 
     # input of correct type but wrong
     # range should raise ValueError
     def test_invalid_range_raises(self):
-
 
         with pytest.raises(ValueError):
             arabic_to_roman(0)
@@ -4067,10 +4066,10 @@ class TestArabicToRoman(object):
     def test_invalid_type_raises(self):
 
         with pytest.raises(TypeError):
-           arabic_to_roman(None)
+            arabic_to_roman(None)
 
         with pytest.raises(TypeError):
-            arabic_to_roman('1')
+            arabic_to_roman("1")
 
         with pytest.raises(TypeError):
             arabic_to_roman(1.0)
@@ -4083,7 +4082,6 @@ class TestArabicToRoman(object):
 
 
 class TestRomanToArabic(object):
-
     def test_all_upper_case_brute_force(self):
 
         assert roman_to_arabic("I") == 1
@@ -8088,7 +8086,7 @@ class TestRomanToArabic(object):
 
     def test_upper_lower_mixed_case_invariant(self):
 
-        for i in range(1,3999):
+        for i in range(1, 3999):
             r_upper_case = arabic_to_roman(i)
             r_lower_case = r_upper_case.lower()
             r_mixed_case = r_lower_case.capitalize()
@@ -8099,17 +8097,33 @@ class TestRomanToArabic(object):
             assert j_from_upper_case == j_from_mixed_case
             assert i == j_from_upper_case
 
-
     # this test systematically adds
     # substrings into valid roman numerals
     # with the aim to make them invalid.
     # Invalid numbers must raise a ValueError
     def test_invalid_string_raises(self):
-
         def insert_str(string, index, substring):
             return string[:index] + substring + string[index:]
 
-        to_insert_list = ('M', 'CM', 'D', 'CD','C', 'XC','L','XL','X','IX','V','IV','I', 'A', 'B', 'AB', 'AM')
+        to_insert_list = (
+            "M",
+            "CM",
+            "D",
+            "CD",
+            "C",
+            "XC",
+            "L",
+            "XL",
+            "X",
+            "IX",
+            "V",
+            "IV",
+            "I",
+            "A",
+            "B",
+            "AB",
+            "AM",
+        )
         repeat_n_times_list = (1, 2, 3)
         for valid_rn in all_valid_roman_numerals_upper_case:
             for to_insertlet in to_insert_list:
@@ -8124,36 +8138,31 @@ class TestRomanToArabic(object):
     def test_invalid_string_handpicked(self):
 
         invalid_inputs = [
-            'XCXL',                 # bad code would translate this to 130
-            'MDCCCCLXXXIIII '       # bad version of MCMLXXXIV (1984)
-            'IVXCDM'                
+            "XCXL",  # bad code would translate this to 130
+            "MDCCCCLXXXIIII " "IVXCDM",  # bad version of MCMLXXXIV (1984)
         ]
 
         for invalid_input in invalid_inputs:
             with pytest.raises(ValueError):
-                roman_to_arabic(invalid_input) 
-
-
+                roman_to_arabic(invalid_input)
 
     # input of wrong types should raise
     # TypeError
     def test_invalid_type_raises(self):
 
         with pytest.raises(TypeError):
-           roman_to_arabic(None)
+            roman_to_arabic(None)
         with pytest.raises(TypeError):
             roman_to_arabic(1)
         with pytest.raises(TypeError):
-            roman_to_arabic(['X'])
+            roman_to_arabic(["X"])
         with pytest.raises(TypeError):
-            roman_to_arabic(('X',))
+            roman_to_arabic(("X",))
         with pytest.raises(TypeError):
             roman_to_arabic(1.0)
 
 
-
 class TestUtils(object):
-
 
     # in other test we use a set which contains
     # all valid roman numerals in upper case
@@ -8162,8 +8171,7 @@ class TestUtils(object):
 
         assert len(all_valid_roman_numerals_upper_case) == 3999
 
-        
-        for i in range(1,4000):
+        for i in range(1, 4000):
             assert arabic_to_roman(i) in all_valid_roman_numerals_upper_case
 
         assert "I" in all_valid_roman_numerals_upper_case
@@ -9315,6 +9323,7 @@ class TestUtils(object):
         assert "MCXLVII" in all_valid_roman_numerals_upper_case
         assert "MCXLVIII" in all_valid_roman_numerals_upper_case
         assert "MCXLIX" in all_valid_roman_numerals_upper_case
+
     assert "MCL" in all_valid_roman_numerals_upper_case
     assert "MCLI" in all_valid_roman_numerals_upper_case
     assert "MCLII" in all_valid_roman_numerals_upper_case

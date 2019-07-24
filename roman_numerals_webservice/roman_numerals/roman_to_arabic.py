@@ -1,10 +1,11 @@
-from . arabic_to_roman import arabic_to_roman
+from .arabic_to_roman import arabic_to_roman
+
 
 class RomanToArabic(object):
-    _char_2_number = {'M':1000, 'D':500, 'C':100, 'L':50, 'X':10, 'V':5, 'I':1}
+    _char_2_number = {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
 
     @staticmethod
-    def convert(roman : str) -> int:
+    def convert(roman: str) -> int:
         """ Convert a Roman numeral to an Arabic Numeral.
 
 
@@ -31,21 +32,23 @@ class RomanToArabic(object):
             try:
                 value = nums[roman[i]]
                 # If the next place holds a larger number, this value is negative
-                if i+1 < len(roman) and nums[roman[i+1]] > value:
+                if i + 1 < len(roman) and nums[roman[i + 1]] > value:
                     sum -= value
-                else: 
+                else:
                     sum += value
             except KeyError:
-                raise ValueError('roman is not a valid Roman numeral: {}'.format(roman))
+                raise ValueError("roman is not a valid Roman numeral: {}".format(roman))
+        print("arabic_to_roman(sum)",arabic_to_roman(sum),"roman",roman)
         # easiest test for validity...
         if arabic_to_roman(sum) == roman:
             return sum
         else:
-            raise ValueError('roman is not a valid Roman numeral: {}'.format(roman))
+            raise ValueError("roman is not a valid Roman numeral: {}".format(roman))
 
 
-roman_to_arabic = RomanToArabic.convert
-def arabic_to_roman(arabic : int) -> str:
+
+
+def roman_to_arabic(arabic: int) -> str:
     """ Convert a Roman numeral to an Arabic Numeral.
     
      Shorthand for :py:meth:`RomanToArabic.convert`, see
@@ -61,3 +64,4 @@ def arabic_to_roman(arabic : int) -> str:
     Returns:
         int : int encoding the input as Arabic numeral       
     """
+    return RomanToArabic.convert(arabic)
