@@ -4,7 +4,7 @@
 
 __author__ = """Thorsten Beier"""
 __email__ = 'derthorstenbeier@gmail.com'
-__version__ = '0.3.2'
+__version__ = '0.4.0'
 
 
 from . import roman_numerals
