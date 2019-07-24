@@ -13,17 +13,12 @@ roman_numerals_webservice
         :target: https://roman-numerals-webservice.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://mybinder.org/badge_logo.svg
-        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/Usage.ipynb
-
 .. image:: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/shield.svg
         :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
         :alt: Updates
 
-
 .. image:: https://img.shields.io/badge/docker-ready-blue.svg
         :target: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
-
 
 
 A python package for a minimalistic web-service to convert roman numerals to arabic numerals and vice versa.
@@ -31,7 +26,6 @@ A python package for a minimalistic web-service to convert roman numerals to ara
 
 * Free software: MIT license
 * Documentation: https://roman-numerals-webservice.readthedocs.io.
-* `Try package online`_
 
 Features
 --------
