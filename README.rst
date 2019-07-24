@@ -14,7 +14,7 @@ roman_numerals_webservice
         :alt: Documentation Status
 
 .. image:: https://mybinder.org/badge_logo.svg
-        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/usage.ipynb
+        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/Usage.ipynb
 
 .. image:: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/shield.svg
         :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
@@ -44,10 +44,7 @@ Features
 * Documentation on `readthedocs.org`
 * Available on `dockerhub`_
 
-Credits
--------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _`dockerhub`: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
 .. _`readthedocs.org`:https://roman-numerals-webservice.readthedocs.io

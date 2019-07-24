@@ -1,15 +1,16 @@
+====================================
 Tests
-=========================
+====================================
 
 To run the unit tests type
 
-.. code-block :: shell
+.. code-block:: shell
     
     make test
 
 To run code coverage analysis type
 
-.. code-block :: shell
+.. code-block:: shell
     
     make coverage
 
