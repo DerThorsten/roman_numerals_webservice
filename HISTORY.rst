@@ -2,6 +2,14 @@
 History
 =======
 
+0.4.0 (2019-07-24)
+------------------
+
+* improved documentation
+* added nightly builds on travis
+* renamed int_to_x to arabic_to_x
+* added better notebook
+
 0.3.3 (2019-07-24)
 ------------------
 

@@ -32,8 +32,10 @@ A python package for a minimalistic web-service to convert roman numerals to ara
 Features
 --------
 
-* minimalistic web-service to convert Roman numerals to Arabic numerals and vice versa
-* heavy tested
+* Python code to to convert Roman numerals to Arabic numerals and vice versa
+* Minimalistic web-service to convert Roman numerals to Arabic numerals and vice versa
+* Heavy tested ]
+* Nightly builds with continuous integration
 * available as `pypi package` package
 * Documentation on `readthedocs.org`
 

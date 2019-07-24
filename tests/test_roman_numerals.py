@@ -8104,7 +8104,6 @@ class TestRomanToArabic(object):
     # substrings into valid roman numerals
     # with the aim to make them invalid.
     # Invalid numbers must raise a ValueError
-    @pytest.mark.skip("slow")
     def test_invalid_string_raises(self):
 
         def insert_str(string, index, substring):
