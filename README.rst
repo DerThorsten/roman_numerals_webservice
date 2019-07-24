@@ -38,14 +38,14 @@ Features
 
 * Python code to to convert Roman numerals to Arabic numerals and vice versa
 * Minimalistic web-service to convert Roman numerals to Arabic numerals and vice versa
-* Heavy tested ]
-* Nightly builds with continuous integration
-* available as `pypi package` package
-* Documentation on `readthedocs.org`
+* Heavy tested
+* Nightly builds on `continous integration servers`_
+* available as `pypi package`_ package
+* Documentation on `readthedocs.org`_
 * Available on `dockerhub`_
 
 
-
+.. _`continous integration servers`: https://travis-ci.org/DerThorsten/roman_numerals_webservice
 .. _`dockerhub`: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
 .. _`readthedocs.org`:https://roman-numerals-webservice.readthedocs.io
 .. _`pypi package`:https://pypi.python.org/pypi/roman_numerals_webservice
