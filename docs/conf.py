@@ -25,6 +25,13 @@ sys.path.insert(0, os.path.abspath('..'))
 
 import roman_numerals_webservice
 
+
+on_rtd  = os.environ.get('READTHEDOCS', None) == 'True'
+
+if on_rtd:
+    this_dir = os.path.dirname(__file__)
+    root_dir = os.path.join(this_dir,'..')
+    subprocess.call('sphinx-apidoc -o docs/ roman_numerals_webservice', shell=True, cwd=root_dir)
 # -- General configuration ---------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
