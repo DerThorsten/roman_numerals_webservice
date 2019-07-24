@@ -38,8 +38,8 @@ class RomanToArabic(object):
                     sum += value
             except KeyError:
                 raise ValueError("roman is not a valid Roman numeral: {}".format(roman))
-        print("arabic_to_roman(sum)",arabic_to_roman(sum),"roman",roman)
-        # easiest test for validity...
+
+        # only if the inverse gives input as result it was a vaid roman numeral
         if arabic_to_roman(sum) == roman:
             return sum
         else:
