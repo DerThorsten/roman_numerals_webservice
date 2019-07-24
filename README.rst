@@ -21,7 +21,7 @@ roman_numerals_webservice
         :alt: Updates
 
 
-.. image:: https://img.shields.io/badge/docker-ready-blue.sv
+.. image:: https://img.shields.io/badge/docker-ready-blue.svg
         :target: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
 
 
