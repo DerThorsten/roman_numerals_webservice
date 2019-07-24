@@ -42,7 +42,7 @@ Features
 * Nightly builds with continuous integration
 * available as `pypi package` package
 * Documentation on `readthedocs.org`
-* Available on 
+* Available on `dockerhub`_
 
 Credits
 -------
