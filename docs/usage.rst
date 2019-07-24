@@ -9,7 +9,13 @@ the webserver can be started with the following command
 
     roman_numerals_webservice
 
-When the server is running requests can be send to the webservice.
+Alternatively we provide a prebuild docker container to start the web-service
+
+.. code-block:: shell
+    
+    sudo docker run -p 8080:8080 derthorsten/roman_numerals_webservice:latest
+
+Once the server is running requests can be send to the web-service.
 On a Unix system this can be done with :code:`curl`
 
 .. code-block:: shell

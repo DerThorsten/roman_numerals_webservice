@@ -20,4 +20,4 @@ Alternatively one can use the prebuild docker image hosted at dockerhub:
 
 .. code:block:: shell
 
-    docker pull derthorsten/roman_numerals_webservice:latest
+    sudo docker run -p 8080:8080 derthorsten/roman_numerals_webservice:latest
