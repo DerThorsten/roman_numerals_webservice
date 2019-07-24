@@ -1,5 +1,6 @@
 Welcome to roman_numerals_webservice's documentation!
-======================================
+============================================================================
+
 
 .. toctree::
    :maxdepth: 2
@@ -7,10 +8,21 @@ Welcome to roman_numerals_webservice's documentation!
 
    readme
    installation
+   tests
    usage
-   modules
    contributing
    authors
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API-doc:
+
+   modules
+
+.. toctree::
+   :maxdepth: 1
+   :caption: History:
+
    history
 
 Indices and tables

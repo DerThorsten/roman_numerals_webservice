@@ -14,7 +14,7 @@ roman_numerals_webservice
         :alt: Documentation Status
 
 .. image:: https://mybinder.org/badge_logo.svg
-        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks
+        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/usage.ipynb
 
 .. image:: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/shield.svg
         :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
@@ -32,14 +32,21 @@ A python package for a minimalistic web-service to convert roman numerals to ara
 Features
 --------
 
-* minimalistic web-service to convert roman numerals to arabic numerals and vice versa
-* heavy tested
+* Python code to to convert Roman numerals to Arabic numerals and vice versa
+* Minimalistic web-service to convert Roman numerals to Arabic numerals and vice versa
+* Heavy tested ]
+* Nightly builds with continuous integration
+* available as `pypi package` package
+* Documentation on `readthedocs.org`
+
 
 Credits
 -------
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. _`readthedocs.org`:https://roman-numerals-webservice.readthedocs.io
+.. _`pypi package`:https://pypi.python.org/pypi/roman_numerals_webservice
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _`Try package online`: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks
