@@ -1,8 +1,7 @@
 import pytest
 import numpy
 from roman_numerals_webservice import RomanNumeralsWebservice
-from roman_numerals_webservice.roman_numerals import (int_to_roman,
-                                                  roman_to_int)
+from roman_numerals_webservice.roman_numerals import (arabic_to_roman,roman_to_arabic)
 
 from http import HTTPStatus
 import cherrypy
@@ -43,7 +42,7 @@ class TestRomanNumeralsWebservice(object):
             r = requests.post(url, json={"arabic" : arabic})
             assert r.status_code == HTTPStatus.OK
             json_res = json.loads(r.json())
-            assert json_res["roman"] == int_to_roman(arabic)    
+            assert json_res["roman"] == arabic_to_roman(arabic)    
 
     @roman_numer_service_runner
     def test_arabic_to_roman_valid_input_advanced(self):
@@ -53,7 +52,7 @@ class TestRomanNumeralsWebservice(object):
         # in python bool is subclass of int
         r = requests.post(url, json={"arabic" : True})
         json_res = json.loads(r.json())
-        assert json_res["roman"] == int_to_roman(1)
+        assert json_res["roman"] == arabic_to_roman(1)
 
     @roman_numer_service_runner
     def test_arabic_to_roman_invalid_input(self):
@@ -101,7 +100,7 @@ class TestRomanNumeralsWebservice(object):
 
         # testing all is to slow
         for arabic in list(range(1,4000, 17)) + [3999]:
-            roman = int_to_roman(arabic)
+            roman = arabic_to_roman(arabic)
             r = requests.post(url, json={"roman" : roman})
             assert r.status_code == HTTPStatus.OK
             json_res = json.loads(r.json())
@@ -109,7 +108,7 @@ class TestRomanNumeralsWebservice(object):
 
         # testing all is to slow
         for arabic in list(range(1,4000, 17)) + [3999]:
-            roman = int_to_roman(arabic)
+            roman = arabic_to_roman(arabic)
             r = requests.post(url, json={"roman" : roman.lower()})
             assert r.status_code == HTTPStatus.OK
             json_res = json.loads(r.json())
