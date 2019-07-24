@@ -42,13 +42,14 @@ Features
 * Nightly builds with continuous integration
 * available as `pypi package` package
 * Documentation on `readthedocs.org`
-
+* Available on 
 
 Credits
 -------
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. _`dockerhub`: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
 .. _`readthedocs.org`:https://roman-numerals-webservice.readthedocs.io
 .. _`pypi package`:https://pypi.python.org/pypi/roman_numerals_webservice
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
