@@ -21,6 +21,10 @@ roman_numerals_webservice
         :alt: Updates
 
 
+.. image:: https://img.shields.io/badge/docker-ready-blue.sv
+        :target: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
+
+
 
 A python package for a minimalistic web-service to convert roman numerals to arabic numerals and vice versa.
 

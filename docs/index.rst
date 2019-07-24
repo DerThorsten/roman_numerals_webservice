@@ -10,6 +10,7 @@ Welcome to roman_numerals_webservice's documentation!
    installation
    tests
    usage
+   docker
    contributing
    authors
 
