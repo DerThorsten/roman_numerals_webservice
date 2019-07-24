@@ -40,7 +40,7 @@ Features
 * Minimalistic web-service to convert Roman numerals to Arabic numerals and vice versa
 * Heavy tested
 * Nightly builds on `continous integration servers`_
-* available as `pypi package`_ package
+* available as `pypi-package`_ package
 * Documentation on `readthedocs.org`_
 * Available on `dockerhub`_
 
@@ -48,7 +48,7 @@ Features
 .. _`continous integration servers`: https://travis-ci.org/DerThorsten/roman_numerals_webservice
 .. _`dockerhub`: https://hub.docker.com/r/derthorsten/roman_numerals_webservice
 .. _`readthedocs.org`:https://roman-numerals-webservice.readthedocs.io
-.. _`pypi package`:https://pypi.python.org/pypi/roman_numerals_webservice
+.. _`pypi-package`:https://pypi.python.org/pypi/roman_numerals_webservice
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _`Try package online`: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/Usage.ipynb
