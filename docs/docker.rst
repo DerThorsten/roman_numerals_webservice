@@ -11,7 +11,7 @@ the following will build the docker container
 
 To start the server use the following:
 
-.. code:block:: shell
+.. code-block:: shell
 
     docker run -p 8080:8080 roman_numerals_webservice
 
