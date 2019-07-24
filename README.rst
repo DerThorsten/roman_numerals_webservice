@@ -14,7 +14,7 @@ roman_numerals_webservice
         :alt: Documentation Status
 
 .. image:: https://mybinder.org/badge_logo.svg
-        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks
+        :target: https://mybinder.org/v2/gh/DerThorsten/roman_numerals_webservice/master?filepath=example_notebooks/usage.ipynb
 
 .. image:: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/shield.svg
         :target: https://pyup.io/repos/github/DerThorsten/roman_numerals_webservice/
